@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MaterialForm</class>
+ <widget class="QWidget" name="MaterialForm">
+  <property name="windowTitle"><string>Material</string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="titleLabel">
+     <property name="text"><string>Material</string></property>
+     <property name="alignment"><set>Qt::AlignHCenter</set></property>
+     <property name="styleSheet"><string notr="true">font-weight:600; font-size:14pt;</string></property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_0">
+       <property name="text"><string>ID</string></property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+<widget class="QSpinBox" name="spinId">
+       <property name="maximum"><number>2147483647</number></property>
+       <property name="readOnly"><bool>true</bool></property>
+      </widget>
+     </item>
+
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_1">
+       <property name="text"><string>Nama Material</string></property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+<widget class="QLineEdit" name="editNamaMaterial">
+       <property name="placeholderText"><string></string></property>
+      </widget>
+     </item>
+
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text"><string>Satuan</string></property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+<widget class="QLineEdit" name="editSatuan">
+       <property name="placeholderText"><string>pcs, kg, dll</string></property>
+      </widget>
+     </item>
+
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text"><string>Harga</string></property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+<widget class="QDoubleSpinBox" name="spinHarga">
+       <property name="maximum"><double>9999999999999.9900000002235174</double></property>
+       <property name="decimals"><number>2</number></property>
+       <property name="singleStep"><double>100.000000000000000</double></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonsLayout">
+     <item><widget class="QPushButton" name="btnNew"><property name="text"><string>Baru</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnSave"><property name="text"><string>Simpan</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnUpdate"><property name="text"><string>Ubah</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnDelete"><property name="text"><string>Hapus</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnClear"><property name="text"><string>Bersihkan</string></property></widget></item>
+     <item><spacer name="hsp"><property name="orientation"><enum>Qt::Horizontal</enum></property>
+      <property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+     <item><widget class="QLineEdit" name="lineSearch"><property name="placeholderText"><string>Cari...</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnRefresh"><property name="text"><string>Refresh</string></property></widget></item>
+    </layout>
+   </item>
+
+   <item>
+    <widget class="QTableView" name="tableView">
+     <property name="sortingEnabled"><bool>true</bool></property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
